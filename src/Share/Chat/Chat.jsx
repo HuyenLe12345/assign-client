@@ -4,7 +4,7 @@ import "./Chat.css";
 import ChatRoomsAPI from "../../API/ChatRoomsAPI";
 
 const io = require("socket.io-client");
-const socket = io("http://localhost:5000", {
+const socket = io("https://host-4k0h.onrender.com", {
   transports: ["websocket"],
   withCredentials: true,
 });
