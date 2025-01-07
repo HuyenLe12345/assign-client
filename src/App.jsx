@@ -43,11 +43,9 @@ function App() {
             <Route path="/signin" component={SignIn} />{" "}
             <Route path="/signup" component={SignUp} />{" "}
             <Route path="/cart" component={Cart} />{" "}
-            <PrivateRoute
-              exact
+            <Route 
               path="/detail/:id"
-              component={Detail}
-              isAuthenticated={isAuthenticated}
+              component={Detail}             
             />
             <PrivateRoute
               exact
