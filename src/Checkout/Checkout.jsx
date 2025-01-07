@@ -6,7 +6,7 @@ import convertMoney from "../convertMoney";
 import "./Checkout.css";
 
 import io from "socket.io-client";
-const socket = io("http://localhost:5000", {
+const socket = io("https://host-4k0h.onrender.com", {
   transports: ["websocket"],
 });
 
